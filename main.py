@@ -19,7 +19,7 @@ class WordDictionary:
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
         """
         result = False
-        if word in self.structure:
+        if word in self.structure or word == ".":
             result = True
         else:
             for item in self.structure:
